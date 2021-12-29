@@ -1,0 +1,43 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="container">
+  <% @teams.each do |team| %>
+    <div class="col-md-6">
+      <div class="card text-white team-card flex-md-row mb-4 shadow-sm h-md-250">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="social-card-header h1">
+            <%= team.name %>
+          </strong>
+          <h6 class="mb-0">
+            <a class="btn btn-outline-light btn-sm" role="button" href="<%= team_path(id: team) %>">
+              Home
+            </a>
+          </h6>
+          <a class="material-icons" style="color:blue;" href="<%= edit_team_path(id: team) %>">mode_edit</a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<style>
+  .team-card {
+    background-color: orange;
+  }
+  .social-card-header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .social-card-header h1 {
+    font-size: 25px;
+  }
+</style>

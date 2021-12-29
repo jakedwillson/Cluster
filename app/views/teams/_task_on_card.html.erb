@@ -1,0 +1,30 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="task">
+  <div class="row">
+    <div class="pull-left">
+      <%= task.name %>
+      <a class="material-icons" style="color:white;" href="<%= edit_task_path(task) %>">mode_edit</a>
+    </div>
+
+    <div class="pull-right">
+      <a class="fab fa-github" style="color:purple;font-size: 1.5em"  href="<%= task.github_url %>"></a>
+    </div>
+  </div>
+</div>
+
+<style>
+  fab fa-github {
+    color: brown;
+  }
+  .pull-left {
+    margin-left: 20px;
+  }
+  .pull-right {
+    float: right;
+    margin-right: 10px;
+  }
+</style>

@@ -1,0 +1,59 @@
+Size
+	- human generated components
+	- measured by
+		- SLOC
+		- function points
+Parameter Relationship
+	Manufacturing
+		- the more that is produced, the less it costs per unit
+	Software
+		- as size increases, effort increases by more than 1:1
+
+Economic History
+	Craftsmanship Era (60s-70s)
+		- individual crafting of basic applications
+		- no reuse
+		- no software process
+	Software Engineering Era (80s-90s)
+		- functional decomposition
+		- measuring processes
+		- waterfall model
+		- process improvements
+		- encapsulation
+			- OOP
+		- diseconomy of scale
+		- off the shelf tools
+			- little integration
+		- 70% custom developments
+		- repeatable processes
+		- sometimes on budget and schedule
+	Software Production Era (2000...)
+		- iterative development
+		- component based (gui/db/frameworks)
+		- return on investment
+		- off the shelf, integrated toolsets
+		- 70% reuse
+		- managed and measured processes
+		- usually on budget and schedule
+
+Software Production
+	- how do we get to this prediction of software production?
+	- complementary growth in
+		- automated environments
+		- size reduction (of custom software)
+		- process improvements
+	- reuse of technology requires investments in common reference architectures
+		- reference architectures can be specialized and reused by similar applications
+		- develop architectures that allow change over time
+
+Estimating Cost
+	- cost estimating techniques are based on previous case studies
+		- various parameters
+		- size is the dominant parameter
+	- accuracy of models has been described as "within 20% , 70% of the time"
+		- projects are never done early or under cost
+Function Points
+	- language independent
+	
+**New "agile" processes make things more difficult to estimate, since they keep changing like every month
+

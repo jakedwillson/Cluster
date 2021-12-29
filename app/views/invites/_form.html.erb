@@ -1,0 +1,7 @@
+<%= form_with(model: [ @team, @team.invites.build ], local: true) do |form| %>
+  <p>
+    <%= form.text_field :email_or_username, placeholder: I18n.t('views.invites.prompt.enter_email_address_or_username'), class: 'txt-enter' %>
+  </p>
+
+  <%= form.submit I18n.t('views.invites.actions.send_invite'), class: 'btn' %>
+<% end %>

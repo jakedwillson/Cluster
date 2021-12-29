@@ -1,0 +1,42 @@
+<h2>Finished</h2>
+<div class="container history">
+  <div class="row">
+    <div class="well text-left history">
+      <ul class="list-group">
+
+        <% @team.finished_tasks.each do |task| %>
+          <li class="list-group-item">
+            <%= link_to(task.name, task_path(task)) %>
+            <a href=<%= re_queue_task_path(id: task) %>>
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+          <li>
+        <% end %>
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+<style>
+  .history {
+    align-items: center;
+    max-width: 400px;
+    background-color: gray;
+  }
+  .dual-list .list-group {
+    margin-top: 8px;
+  }
+  .list-group {
+    overflow: hidden;
+  }
+  .list-left li, .list-right li {
+    cursor: pointer;
+  }
+  .list-arrows {
+    padding-top: 100px;
+  }
+  .list-arrows button {
+    margin-bottom: 20px;
+  }
+</style>

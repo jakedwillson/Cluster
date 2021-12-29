@@ -1,0 +1,8 @@
+<form method="get" action="add_message">
+  <input type="hidden" name="id" value=<%= @conversation.id %>>
+    <input name="body" type="text" class="write_msg" placeholder="Type a message" />
+    <button class="msg_send_btn" type="submit">
+      <i class="fa fa-paper-plane-o" aria-hidden="true">
+      </i>
+    </button>
+</form>

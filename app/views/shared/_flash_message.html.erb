@@ -1,0 +1,12 @@
+<!--locals: { name,msg }-->
+<% if name == "notice" %>
+  <div class="alert alert-success">
+    <a class="close" data-dismiss="alert">×</a>
+    <%= msg %>
+  </div>
+<% else %>
+  <div class="alert alert-error">
+    <a class="close" data-dismiss="alert">×</a>
+    <%= msg %>
+  </div>
+<% end %>

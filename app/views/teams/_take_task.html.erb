@@ -1,0 +1,3 @@
+<%= form_with(model: @team, local: true) do |form| %>
+  <% form.collection_select(:user_id, User.all, :id, :first_name ) %>
+<% end %>

@@ -1,0 +1,45 @@
+<%= simple_form_for [@team, @task], :html => { :class => 'form-horizontal' } do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <!--  only if editing-->
+  <% if @task.created_at.present? %>
+    <%= f.label :user, "Developer" %>
+    <% if @task.user.present? %>
+      <%= f.select_tag :user_id, options_from_collection_for_select(other_available_users_for_task(@task), :id, :username) %>
+    <% else %>
+      <%= f.select_tag :user_id, content_tag(:option, 'select user...', :value => '') + options_from_collection_for_select(other_available_users_for_task(@task), :id, :username) %>
+    <% end %>
+  <% end %>
+
+  <%= f.hidden_field :status %>
+
+  <!--  only if editing-->
+  <% if @task.created_at.present? %>
+    <%= f.label :user_status, "User Status" %>
+    <%= f.text_field :user_status %>
+  <% end %>
+
+  <%= f.label :deadline %>
+  <%= f.date_field :deadline %>
+
+  <%= f.label :github_url %>
+  <%= f.text_field :github_url %>
+
+  <%= f.label :note %>
+  <%= f.text_area :note %>
+
+  <br><br>
+  <%= f.button :submit, :class => 'btn-primary' %>
+
+<% end %>
+
+<br>
+
+<%= button_to("Mark Complete", mark_complete_path(id: @task), class: 'btn-success') %><br>
+<%= button_to("Return to Queue", return_to_queue_path(id: @task), class: 'btn-warning') %>
+
+<br><br>
+
+<%= link_to('back', team_path(id: @task.team), class: 'btn') %>

@@ -1,0 +1,77 @@
+<!--locals: { user }-->
+<% task = user.task_assignment(@team) %>
+  <div class="col-md-4">
+    <div class="card mb-4">
+
+      <div class="social-card-header align-middle text-center bg-title">
+        <a class="btn btn-outline-primary-username" href="#">
+          <%= user.try(:username) %>
+        </a>
+
+        <% unless user == current_user %>
+          <%= render 'shared/direct_message_icon', url: conversations_find_or_create_path(id: user) %>
+        <% end %>
+      </div>
+
+      <% if task %>
+        <div class="card-body">
+          <div id="left">
+            <div class="status-line">
+              STATUS
+            </div>
+            <%= task.user_status %>
+          </div>
+          <div id="right">
+            <div class="time-left-line">
+              TIME LEFT
+            </div>
+            <div class="time-left-body">
+              <div class="days-left">
+                <%= days_left(task) %> DAYS
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <%= render :partial => 'task_on_card', locals: { task: task } %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+<style>
+  .btn.btn-outline-primary-username {
+    font-size: medium;
+  }
+  .status-line {
+    font-weight: bold;
+    border-style: solid;
+    margin: 2px 2px 5px 2px;
+  }
+  .days-left {
+    margin-bottom: 10px;
+  }
+  .time-left-line {
+    font-weight: bold;
+    border-style: solid;
+    margin: 2px 2px 5px 2px;
+  }
+  .time-left-body {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 3px;
+    font-size: 20px;
+  }
+  #left {
+    width:50%;
+    float:left;
+    background:orange;
+    height: var(--status-height);
+  }
+  #right {
+    margin-left:50%;
+    border-left:solid 1px black;
+    background: yellow;
+    height: var(--status-height);
+  }
+</style>

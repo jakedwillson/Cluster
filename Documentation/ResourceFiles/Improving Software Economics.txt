@@ -1,0 +1,144 @@
+Effort = (personnel)(environment)(quality)(size^(process))
+
+Overview
+	- reduce size/complexity
+	- improve process
+	- better environments
+	- using better personnel
+	- reducing requirements
+
+Not that simple
+	- there are significant dependences between parameters
+		- tools can enable size reduction
+		- process improvements drive tool development
+		- better trained people use processes/tools better
+	- GUI development
+		- better tools changed process
+	- hardware advances drive software improvements
+		- faster cpu, more memory, more bandwidth
+
+Reducing Size and Complexity
+	- component-based reuse reduces custom-developed code
+		- code generation
+		- higher order languages
+		- OO approaches
+		- reuse of commercial components
+	- while we reduce amount of custom code, amount of total code increases
+
+Code Generation
+	- usually in domain-specific applications
+		- GUIs
+		- database applications
+		- basic OO shells
+	- even more in development
+		- communication protocols
+		- general purpose algorithm development (very advanced)
+		- component "glue" generators
+			- message passing techniques
+	- goal is to maintain software at specification/design level and leave code alone
+
+Higher Order Languages
+	- universal function points are a language indipendent measure of input/outputs, data groups, interfaces, etc
+	- expressiveness of language can be expressed
+	- C++/Java are half as expressive as C
+	- Basic is less expressive than C++/Java
+
+Object-Oriented Approaches
+	- no economic benefits objectively
+		- only annecdotal
+	- reasons why OOP succeeds
+		- common vocabulary between developers and users
+		- continuous integration provides opportunity to recognize and reduce risks early
+		- separates parts of system with encapsulation
+	- the advantages of OOP relate more to the software process than the technology
+
+Reuse
+	- important in any engineering discipline
+	- only works if there is an economic benefit
+		- OS, DB systems, middleware, office applications
+		- requires substantial investment to make work
+		- reusable components cost more to develop
+	
+Commercial Components
+	- off-the-shelf components were popular in mid 90s (before open-source)
+	- advantages
+		- predictable license costs
+		- mature technology
+		- available now
+		- existing support
+		- rich functionality
+	- disadvantages
+		- frequent upgrades
+		- maintenance fees
+		- stuck with vendor
+		- runtime efficiency
+		- functionality constraints
+		- difficult integration
+		- lack of control over maintenance
+		- vendor-vendor incompatibilities
+	
+Three Types of Processes
+	Metaprocesses
+		- an organization's policies, procedures and practices for pursuing a software-oriented line of business
+	Macroprocesses (project)
+		- cost, schedule and meeting quality requirements in the production of a software product
+	Microprocesses (iteration)
+		- team's procedures for producing an artifact of the software process
+
+Process Improvement
+	Complexity
+		- requires overhead processes
+		- overhead processes are inefficient
+
+Schedule Improvement
+	- add concurrency to each step
+	- task sequences arer the major obstacle to compressing the schedule
+	- goal: produce a sufficient quality product in as few of steps as possible
+
+Better People/Teams
+	- well-designed systems can be built by average engineers
+	- mismanaged teams will fail, even with experts
+	- a well managed team can succeed with average engineers
+	- poorly designed system will fail, even with experts
+	
+Boehm's Staffing Principles
+	1) top talent
+	2) job matching
+	3) career progression
+	4) team balance
+	5) phase out poor performers
+
+Project Manager Skills
+	- hiring skills
+	- customer interface skills
+	- decision making skills
+	- team building skills
+	- selling skills
+
+Better Environments
+	- automation alone can save 20-40%
+	- automation with process improvement can be much more efficient
+		- automation can enforce management controls
+	- automation is the key to process improvement
+		- increase efficiency of individual steps
+		- control concurrent steps
+
+Types of Automation
+	- environments
+	- environment should support round-trip engineering
+	- should include
+		- requirements management
+		- documentation management
+		- programming tools
+		- testing tools
+		- change management
+		- feature/defect tracking
+
+Reduce the Costs associated with achieving the RIGHT quality
+
+Practices to Improve Quality
+	- focus on driving requirements
+	- use metrics and indicators to measure progress
+	- provide integrated life-cycle environments
+	- use visual modeling and higher-level languages to support architectural design/control
+	- demonstration based evaluations

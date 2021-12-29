@@ -1,0 +1,122 @@
+Software Engineering
+	- discipline involved in the development of large applications
+	- not only programming
+	- management issues
+		- directed teams
+		- scheduling
+		- budgeting
+
+Five Functions of Software Managers
+	- planning
+		- measure progress
+	- organizing
+		- create groups with project related goals
+	- staffing
+		- build groups with mix of talent and capability
+	- directing
+		- overall objectives
+		- communicate budget and schedule
+	- controlling
+		- monitor on dayly and weekly basis
+
+Conventional Software Management
+	- waterfall model
+		- two steps
+			- analysis
+			- coding
+		- introduce overhead stps to control process
+			- software requirements
+				- user experience
+			- program design
+				- before coding stage
+			- testing
+			- operations (production)
+		- waterfall is inherently risky
+			- analysis is done early but validated late
+			- requirements validated even later
+		- improvements to waterfall
+			- design comes first
+				- insert preliminary design between requirements and analysis
+					- prototype
+					- get involved with the user to see if there are any errors in requirements
+				- flesh out risk early
+			- document the design
+				- communicate with programmers and support later modifications (design for change)
+				- designers must communicate to programmers
+			- do it twice
+				- be prepared to tear down the first design
+			- plan monitor and control testing
+				- employ team to test final product
+		- in practice
+			- integration and testing typically takes 40% of life-cycle resources
+			- software project management is risk management
+			- problem is in the implementation
+				- long integration and late design breakage
+					- early success with paper designs
+					- late coding
+					- integration problems due to unforseen issues
+					- pressure to get system working
+					- patching code instead of redesign
+					- fragile, non-maintainable product
+					- late delivery
+				- late risk resolution
+					- focus on paper products
+						- design, implementation and integration risks were intangible
+					- early risk was unpredictable
+					- risk stabilized during design but at high level
+					- risk not resolved until integration
+						- caused protracted integration
+					
+				- requirements driven functional decomposition
+				- adversarial stakeholder relationships
+				- focus on documents and reviews
+
+Requirements Driven Functional Decomposition
+	- focus: implement requirements exactly
+	- problem: requirements are incomplete and ambiguous
+	- functional decomposition forced software to follow requirements specification
+		- assumes all requirements are equally important
+		- functional decomposition was anchored in contracts
+		- no room for architectural design
+		
+Adversarial Stakeholder Relationships
+	- ambiguities in requirements
+		- long spans between requirements and delivery increased chance of personnel changes
+		- misinterpretations occur
+	- document-review-approval cycle
+		- once a requirement was documented, it was hard to change
+		- changes to contracts always cost money $$
+	- differing interpretation of requirements lead to dissatisfied customers
+
+Focus on Documents and Review Meetings
+	- conventional processes focused on documentation
+	- little focus on software products until late in life-cycle (coding at the earliest)
+	- milestones passed based on document approval after major meetings
+		- documentation became part of contract and difficult to change
+	- meeting presentations not aimed at technical issues
+		- users/managers drove meetings
+
+Conventional Software Conclusion
+	- highly unpredictable : only 10% are delivered within initial budget and schedule
+	- management discripline is more important than technology
+	- level of scrap and rework is indicative of immature process
+
+Findings
+	- after delivery, problems are 100 times more expensive than during design phase
+	- walkthroughs catch 60% of errors
+	- 2:1 ratio on maintenance costs versus development costs
+	- can only compress schedule 25% and no more
+	- 15% of development effort is programming
+		- and this is the only part where we add value to the product
+	- cost is mainly a function of the source lines of code
+		- software systems and products cost 3 times more than individual applications
+		- software-systems software cost 9 times more
+	- 80% of the work comes from 20% of the contributors
+		- variations in people account for difference in productivity
+	- ratio of software to hardware cost is growing
+		- software is still eating us up in terms of cost (95:5)
+	
+Summary
+	- conventional software theory is sound but implementation fails
+	- conventional practices are tied to archaic technology and techniques
+	- conventional software economics provide a benchmark against which we can compare modern practices

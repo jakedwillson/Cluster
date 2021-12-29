@@ -1,0 +1,95 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  controller:
+    sessions:
+      notices:
+        logged_in: "Logged In!"
+        logged_out: "Logged Out!"
+      alerts:
+        invalid_email_or_password: "Email or password is invalid"
+    users:
+      notices:
+        account_successfully_created: "Account successfully created!"
+        account_successfully_updated: "Account successfully updated!"
+        account_successfully_deleted: "Account successfully deleted"
+  hello: "Hello world"
+  model:
+    conversation:
+      errors:
+        sender_and_recipient_same: "Sender is not unique from Recipient"
+    task: "Task"
+    team:
+      errors:
+        invalid_created_by_id: "Invalid User ID for created_by"
+        user_already_added: "User is already a member of the team"
+        user_not_on_team: "The User is not on the Team to begin with"
+        invalid_team_id: "Invalid Team ID"
+    user:
+      errors:
+        invalid_user_id: "User ID is invalid"
+  views:
+    application:
+      website_logo_text: "Cluster"
+    teams:
+      new: "New Team"
+      create: "Create Team"
+      show: "Show Team Info"
+    users:
+      edit: "Edit Profile"
+      update: "Save Changes"
+    welcome:
+      login: "Login"
+      sign_out: "Sign Out"
+      create_account: "Create Account"
+  layouts:
+    account:
+      destroy_account: "Destroy My Account"
+      private_account: "Private Account Info"
+      public_profile: "Public Profile"
+      sign_out: "Sign Out"
+    categories:
+      home: "Home"
+      account: "Profile"
+      friends: "Friends"
+      messages: "Chat"
+      teams: "Teams"
+    friends:
+      add_friend: "Add Friend"
+      invite: "Invite"
+      my_friends: "My Friends"
+    messages:
+      conversations: "Conversations"
+      new_message: "New Message"
+    teams:
+      create_team: "Create Team"
+      my_teams: "My Teams"

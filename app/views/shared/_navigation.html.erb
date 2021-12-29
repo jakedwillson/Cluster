@@ -1,0 +1,21 @@
+<!--navigation menu (in header)-->
+<!--calls current_user method }-->
+<%= nav_bar fixed: :top, brand: I18n.t('views.application.website_logo_text'), brand_link: root_url, responsive: true do %>
+  <%#= nav_bar fixed: :top, brand: image_tag("cool_colored_star.png", class: 'logo'), brand_link: root_url, responsive: true do %>
+  <% if current_user %>
+    <%= menu_group do %>
+      <%= menu_item I18n.t('layouts.categories.teams'), teams_path %>
+      <%= menu_item I18n.t('layouts.categories.messages'), conversations_path %>
+      <%= menu_item I18n.t('layouts.categories.account'), edit_user_path(current_user) %>
+    <% end %>
+
+    <%= menu_group pull: :right do %>
+      <%= menu_item "Log Out", logout_path %>
+    <% end %>
+  <% else %>
+    <%= menu_group do %>
+      <%= menu_item I18n.t('views.welcome.login'), login_path %>
+      <%= menu_item I18n.t('views.welcome.create_account'), signup_path %>
+    <% end %>
+  <% end %>
+<% end %>
